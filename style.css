@@ -152,29 +152,31 @@ nav {
 }
 
 .contPart {
-  padding: 2rem;
+  padding: 3rem;
 }
 .contPart h2 {
   text-align: center;
   font-size: 1.75rem;
 }
+
 .imgPart {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-.imgPart img {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.div1 {
-  grid-area: 1 / 1 / 2 / 2;
+.imgPart img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
 }
-.div2 {
-  grid-area: 1 / 2 / 2 / 3;
+
+.parteneri img {
+  width: 100px;
+}
+
+.parteneri img:hover {
+  filter: grayscale(0);
 }
 .final {
   background-color: #141e4c;
